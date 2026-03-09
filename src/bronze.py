@@ -44,8 +44,17 @@ def ingest_bronze():
         records.append(data)
         print(f"  ✅ {path.name}")
 
-    # Converte para DataFrame e salva como Parquet
+    # Converte para DataFrame
     df = pd.DataFrame(records)
+
+    # Serializa colunas com objetos complexos (listas/dicts) como JSON string
+    # Isso garante compatibilidade com Parquet e preserva o dado original intacto
+    for col in df.columns:
+        if df[col].dtype == object:
+            df[col] = df[col].apply(
+                lambda x: json.dumps(x) if isinstance(x, (dict, list)) else x
+            )
+
     df.to_parquet(OUTPUT, index=False)
 
     print(f"\n🥉 Bronze salvo em: {OUTPUT}")

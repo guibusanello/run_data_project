@@ -79,7 +79,7 @@ def transform_silver():
             "distance_m":           track.get("distance"),
             "distance_km":          round(int(track["distance"]) / 1000, 2) if track.get("distance") else None,
             "avg_speed_ms":         track.get("average_speed"),
-            "avg_pace_min_km":      round(float(track["average_pace"]) * 1000, 2) if track.get("average_pace") else None,
+            "avg_pace_min_km": round(float(track["average_pace"]) * 1000 / 60, 2) if track.get("average_pace") else None,
             "max_speed_ms":         track.get("max_speed"),
             "elevation_gain_m":     track.get("elevation_gain"),
             "elevation_loss_m":     track.get("elevation_loss"),

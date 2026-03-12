@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="600" height="200" font-family="Georgia, serif">
+
+  <!-- Background -->
+  <rect width="600" height="200" fill="#0f1117" rx="12"/>
+
+  <!-- BRONZE -->
+  <rect x="40" y="50" width="140" height="100" rx="10" fill="#1a0f06" stroke="#cd7f32" stroke-width="2"/>
+  <rect x="40" y="50" width="140" height="36" rx="10" fill="#cd7f32"/>
+  <rect x="40" y="72" width="140" height="14" fill="#cd7f32"/>
+  <text x="110" y="73" text-anchor="middle" font-size="13" font-weight="bold" fill="#3d1a00">🥉 BRONZE</text>
+  <text x="110" y="105" text-anchor="middle" font-size="10" fill="#a06030">Ingestão fiel</text>
+  <text x="110" y="122" text-anchor="middle" font-size="10" fill="#7a4a20">305 linhas · 23 colunas</text>
+  <text x="110" y="139" text-anchor="middle" font-size="9" fill="#5a3010">dado original preservado</text>
+
+  <!-- Arrow 1 -->
+  <line x1="182" y1="100" x2="218" y2="100" stroke="#888" stroke-width="2"/>
+  <polygon points="218,95 228,100 218,105" fill="#888"/>
+
+  <!-- SILVER -->
+  <rect x="230" y="50" width="140" height="100" rx="10" fill="#0e1117" stroke="#c0c0c0" stroke-width="2"/>
+  <rect x="230" y="50" width="140" height="36" rx="10" fill="#c0c0c0"/>
+  <rect x="230" y="72" width="140" height="14" fill="#c0c0c0"/>
+  <text x="300" y="73" text-anchor="middle" font-size="13" font-weight="bold" fill="#1a1a2e">🥈 SILVER</text>
+  <text x="300" y="105" text-anchor="middle" font-size="10" fill="#8a9aaa">Limpeza e normalização</text>
+  <text x="300" y="122" text-anchor="middle" font-size="10" fill="#6a7a8a">305 linhas · 30 colunas</text>
+  <text x="300" y="139" text-anchor="middle" font-size="9" fill="#4a5a6a">tipos e unidades corretos</text>
+
+  <!-- Arrow 2 -->
+  <line x1="372" y1="100" x2="408" y2="100" stroke="#888" stroke-width="2"/>
+  <polygon points="408,95 418,100 408,105" fill="#888"/>
+
+  <!-- GOLD -->
+  <rect x="420" y="50" width="140" height="100" rx="10" fill="#120e00" stroke="#ffd700" stroke-width="2"/>
+  <rect x="420" y="50" width="140" height="36" rx="10" fill="#ffd700"/>
+  <rect x="420" y="72" width="140" height="14" fill="#ffd700"/>
+  <text x="490" y="73" text-anchor="middle" font-size="13" font-weight="bold" fill="#3d2d00">🥇 GOLD</text>
+  <text x="490" y="105" text-anchor="middle" font-size="10" fill="#c09020">Métricas analíticas</text>
+  <text x="490" y="122" text-anchor="middle" font-size="10" fill="#8b7020">4 tabelas agregadas</text>
+  <text x="490" y="139" text-anchor="middle" font-size="9" fill="#6b5010">pronto para consumo</text>
+
+  <!-- Title -->
+  <text x="300" y="30" text-anchor="middle" font-size="11" fill="#8892a4" letter-spacing="3">ARQUITETURA MEDALLION</text>
+
+  <!-- Bottom label -->
+  <text x="300" y="175" text-anchor="middle" font-size="9" fill="#3a4a5a">Bronze → Silver → Gold · fluxo unidirecional · dado sempre reprocessável</text>
+
+</svg>
